@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("./img/background6.jpg");
+    background-repeat: repeat-y;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 32px;
+   
+}
+
+
+
+header {
+    background-color: #232121ab;
+    width: auto;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 12px;
+    text-shadow: 0 6px 40px rgb(255, 255, 255); 
+    max-width: 1400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cinzel-headline {
+  color: #797676;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: revert;
+  font-size: 104px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  text-shadow: 0 0 5px white;
+  
+  }
+
+  .allImagesGrid{
+    display: flex;
+  }
+
+  .picturesLandingPage{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    border-radius: 16px;
+  }
+
+  img{
+    margin: 8px;
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    
+  }
+
+  img:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transform: scale(1.2);
+    transition: 300ms ease-in-out;
+  }
+
+  .photoGallery{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .d-none{
+    display: none;
+  }
+
+  .imagesInOverlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 90vw;
+    border-radius: 12px;
+    background-color: #79767677;
+    box-shadow: 0 0 20px white;
+    max-width: 1200px;
+  }
+
+  .imageStyleInGallery{
+    height: 55vh;
+    width: 70vw;
+    max-width: 800px;
+  }
+
+  .imageStyleInGallery:hover{
+    filter: none;
+    cursor: default;
+    transform: none;
+    transition: none;
+  }
+
+  .galleryStyle{
+    display: flex;
+    align-items: center;
+  }
+
+  .arrowIconLeft{
+    height: 88px;
+    width: 88px;
+    
+  }
+
+  .arrowIconRight{
+    height: 88px;
+    width: 88px;
+    
+  }
+
+  .arrowIconLeft:hover{
+    filter: brightness(60%);
+    transform: none;
+  }
+
+  .arrowIconRight:hover{
+    filter: brightness(60%);
+    transform: none;
+  }
+
+
+.closeButton{
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  right: 2vh;
+  top: 2vh;
+
+}
+
+.arrowIconRightEndOfGallery{
+  height: 88px;
+  width: 88px;
+  filter: opacity(0.1) drop-shadow(0 0 0 rgba(255, 255, 255, 0.199));
+}
+
+.arrowIconRightEndOfGallery:hover{
+  filter: opacity(0.1) drop-shadow(0 0 0 rgba(255, 255, 255, 0.199));
+  transform: none;
+  cursor:auto;
+}
+
+.arrowIconLeftStartOfGallery{
+  height: 88px;
+  width: 88px;
+  filter: opacity(0.1) drop-shadow(0 0 0 rgba(255, 255, 255, 0.199));
+}
+
+.arrowIconLeftStartOfGallery:hover{
+  filter: opacity(0.1) drop-shadow(0 0 0 rgba(255, 255, 255, 0.199));
+  transform: none;
+  cursor:auto;
+}
+
+
+
+@media(max-width: 1200px) {
+
+  .cinzel-headline{
+    font-size: 64px;
+  }
+
+  .imagesInOverlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 12px;
+    background-color: #040404d4;
+    box-shadow: none;
+    max-width: 1200px;
+  }
+
+  img.imagesInOverlay{
+    border: 5px solid #555;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .photoGallery{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .arrowIconRight{
+    position: absolute;
+    right: 16vh;
+    bottom: 20vh;
+    height: 112px;
+    width: 112px;
+  }
+
+  .arrowIconLeft{
+    position: absolute;
+    left: 16vh;
+    bottom: 20vh;
+    height: 112px;
+    width: 112px;
+  }
+
+
+
+  .imageStyleInGallery {
+    width: 96vw;
+    height: 40vh;
+    max-height: 800px;
+}
+
+.closeButton{
+  height: 112px;
+  width: 112px;
+  position: absolute;
+  right: 2vh;
+  bottom: 10px;
+}
+
+.arrowIconRightEndOfGallery{
+  position: absolute;
+  right: 16vh;
+  bottom: 20vh;
+  height: 112px;
+  width: 112px;
+  filter: brightness(5%);
+}
+
+.arrowIconRightEndOfGallery:hover{
+  filter: brightness(5%);
+  transform: none;
+}
+
+.arrowIconLeftStartOfGallery{
+  position: absolute;
+  left: 16vh;
+  bottom: 20vh;
+  height: 112px;
+  width: 112px;
+  filter: brightness(5%);
+
+}
+
+
+.arrowIconLeftStartOfGallery:hover{
+  filter: brightness(5%);
+  transform: none;
+}
+}
+
+@media(max-width: 800px) {
+
+  .cinzel-headline{
+    font-size: 40px;
+  }
+
+  .imageStyleInGallery {
+    width: 96vw;
+    height: 80%;
+    max-height: 300px;
+    
+}
+
+.arrowIconRight{
+  position: fixed;
+  right: 0.5vh;
+  top: 20vh;
+  height: 32px;
+  width: 32px;
+}
+
+.arrowIconLeft{
+  position: fixed;
+  left: 0.5vh;
+  top: 20vh;
+  height: 32px;
+  width: 32px;
+}
+
+.arrowIconLeftStartOfGallery{
+  position: absolute;
+  left: 0.5vh;
+  top: 20vh;
+  height: 32px;
+  width: 32px;
+  filter: brightness(5%);
+}
+
+.arrowIconLeftStartOfGallery:hover{
+  filter: brightness(5%);
+  transform: none;
+}
+
+.arrowIconRightEndOfGallery{
+  position: absolute;
+  right: 0.5vh;
+  top: 20vh;
+  height: 32px;
+  width: 32px;
+  filter: brightness(5%);
+}
+
+.responsiveCloseButton{
+ position: absolute;
+ top: 0;
+ right: 4px;
+ margin: 0;
+
+}
+
+.closeButton {
+position: absolute;
+margin: 0;
+height: 32px;
+width: 32px;
+}
+
+}

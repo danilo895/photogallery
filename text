@@ -1,0 +1,9 @@
+        if (i>=24){
+            document.getElementById('pictures').classList.add('d-none');
+            document.getElementById('photoGallery').classList.remove('d-none');
+            currentImage.innerHTML = '';
+            document.getElementById('currentImage').innerHTML += /*html*/`
+                        <img onclick="previousImage(${i - 1})" class="arrowIconLeft" src="./img/arrow-left.png" alt="">
+                        <img class="imageStyleInGallery" src="${images[i]}" alt="">
+                        <img onclick="nextImage(${i + 1})" class="arrowIconRightEndOfGallery" src="./img/arrow-right.png" alt="">
+            `}
